@@ -9,7 +9,6 @@ import com.easydiameter.util.ProtocolDefinitions;
 import java.util.HashMap;
 import java.util.Map;
 
-// This is a very basic example of DiameterApplication, implement it as you need
 public class Server implements DiameterApplication, ProtocolDefinitions, ExtractData {
     HashMap<String, String> userName_pass;
     HashMap<String, Integer> userName_time;
@@ -20,6 +19,18 @@ public class Server implements DiameterApplication, ProtocolDefinitions, Extract
 
         userName_pass.put("hijibijee", "lereve30percent");
         userName_time.put("hijibijee", 71099);
+
+        userName_pass.put("client1", "onekbhalo");
+        userName_time.put("client1", 11111);
+
+        userName_pass.put("client2", "khubbhalo");
+        userName_time.put("client2", 22222);
+
+        userName_pass.put("client3", "etojebhalo");
+        userName_time.put("client3", 33333);
+
+        userName_pass.put("client4", "beshibhalo");
+        userName_time.put("client4", 44444);
     }
 
     @Override
